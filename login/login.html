@@ -1,0 +1,29 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1">
+    <meta name="theme-color" content="#59532c" />
+    <title>RedPro</title>
+    <link href="css/global.css" type="text/css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="scripts/login.js"></script>
+    <script src="scripts/alerts_prosoft.js"></script>
+</head>
+
+<body id="loginBody">
+    <main id="loginMain">
+        <section id="izquierda">
+            <!-- <div class="info-lateral">Estaciones de gasolina</div> -->
+        </section>
+        <section id="derecha">
+            <form method="post" id="login" autocomplete="off" action="">
+                <h2>Estaciones de gasolina<br><a class="sub-titulo">Ingreso a módulo</a></h2>
+                <input id="usuario" name="usuario" type="text" placeholder="Usuario" class="bg-gris txt-gris">
+                <input id="clave" name="clave" type="password" placeholder="Contraseña" class="bg-gris txt-gris">
+                <span id="toogleClave" class="lsf-icon password"></span>
+                <button id="validarForm" class="btn-azul-oscuro" name="submit">Ingresar</button>
+                <div class="display-none" id="mensaje-error"></div>
+
+            </form>
+        </section>
+    </main>
+</body>

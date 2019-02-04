@@ -1,0 +1,60 @@
+{
+    "Menu": [
+        {
+            "Id": "1",
+            "Descripcion": "Opción 1",
+            "Sub": [
+                {
+                    "Id": "11",
+                    "Descripcion": "Opción 1-1"
+                },
+                {
+                    "Id": "12",
+                    "Descripcion": "Opción 1-2",
+                    "Sub": [
+                        {
+                            "Id": "121",
+                            "Descripcion": "Opción 1-2-1",
+                            "Sub": [
+                                {
+                                    "Id": "1211",
+                                    "Descripcion": "Opción 1-2-1-1"
+                                },
+                                {
+                                    "Id": "1212",
+                                    "Descripcion": "Opción 1-2-1-2"
+                                }
+                            ]
+                        },
+                        {
+                            "Id": "122",
+                            "Descripcion": "Opción 1-2-2 /Prueba"
+                        }
+                    ]
+                },
+                {
+                    "Id": "13",
+                    "Descripcion": "Opción 1-3"
+                }
+            ]
+        },
+        {
+            "Id": "2",
+            "Descripcion": "Opción 2",
+            "Sub": [
+                {
+                    "Id": "21",
+                    "Descripcion": "Opción 1-1"
+                },
+                {
+                    "Id": "22",
+                    "Descripcion": "Opción 1-2"
+                }
+            ]
+        },
+        {
+            "Id": "3",
+            "Descripcion": "Opción 3"
+        }
+    ]
+}

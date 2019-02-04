@@ -1,0 +1,1101 @@
+{
+    "Menu": [
+        {
+            "Id": "C1",
+            "Descripcion": "ARCHIVOS MAESTROS"
+        },
+        {
+            "Id": "C2",
+            "Descripcion": "MOVIMIENTO DIARIO"
+        },
+        {
+            "Id": "C3",
+            "Descripcion": "FORMATOS TESORERIA"
+        },
+        {
+            "Id": "C4",
+            "Descripcion": "CONSULTAS"
+        },
+        {
+            "Id": "C5",
+            "Descripcion": "CATALOGOS"
+        },
+        {
+            "Id": "C6",
+            "Descripcion": "LISTADOS"
+        },
+        {
+            "Id": "C7",
+            "Descripcion": "AYUDAS"
+        },
+        {
+            "Id": "C8",
+            "Descripcion": "CIERRE"
+        },
+        {
+            "Id": "C9",
+            "Descripcion": "FACTURACION E INV.",
+            "Sub": [
+                {
+                    "Id": "C91",
+                    "Descripcion": "ARCHIVOS MAESTROS"
+                },
+                {
+                    "Id": "C92",
+                    "Descripcion": "MOVIM. INVENTARIOS"
+                },
+                {
+                    "Id": "C93",
+                    "Descripcion": "CONSULTAS INVENT."
+                },
+                {
+                    "Id": "C94",
+                    "Descripcion": "FACTURACION"
+                },
+                {
+                    "Id": "C95",
+                    "Descripcion": "INFORMES"
+                },
+                {
+                    "Id": "C96",
+                    "Descripcion": "AYUDAS INVENTARIOS"
+                },
+                {
+                    "Id": "C97",
+                    "Descripcion": "MENU PERSONALIZADO",
+                    "Sub": [
+                        {
+                            "Id": "C971",
+                            "Descripcion": "MENU ACT. MAESTROS DE SALUD",
+                            "Sub": [
+                                {
+                                    "Id": "C9711",
+                                    "Descripcion": "ACTUALIZAR GRUPOS CUPS"
+                                },
+                                {
+                                    "Id": "C9712",
+                                    "Descripcion": "ACTUALIZAR NOMBRES TARIFAS"
+                                },
+                                {
+                                    "Id": "C9713",
+                                    "Descripcion": "ACTUALIZAR TARIFAS SERVICIOS"
+                                },
+                                {
+                                    "Id": "C9714",
+                                    "Descripcion": "ACTUALIZAR FICHA SISVAN"
+                                },
+                                {
+                                    "Id": "C9715",
+                                    "Descripcion": "INCREMENTAR TARIFAS"
+                                },
+                                {
+                                    "Id": "C9716",
+                                    "Descripcion": "DUPLICAR TARIFAS"
+                                },
+                                {
+                                    "Id": "C9717",
+                                    "Descripcion": "ACTUALIZAR SERVICIOS HOSPIT."
+                                },
+                                {
+                                    "Id": "C9718",
+                                    "Descripcion": "ACTUALIZAR CODIGOS CUPS"
+                                },
+                                {
+                                    "Id": "C9719",
+                                    "Descripcion": "ACTUALIZA PERSONAL ATIENDE"
+                                },
+                                {
+                                    "Id": "C971A",
+                                    "Descripcion": "ACTUALIZA ESPECIALIDAD X CUP"
+                                },
+                                {
+                                    "Id": "C971B",
+                                    "Descripcion": "ACTUALIZAR UNIDAD ATENCION"
+                                },
+                                {
+                                    "Id": "C971C",
+                                    "Descripcion": "ACTUALIZAR DIVISION FACTURAC"
+                                },
+                                {
+                                    "Id": "C971D",
+                                    "Descripcion": "ACTUALIZAR COLEGIOS"
+                                },
+                                {
+                                    "Id": "C971E",
+                                    "Descripcion": "EQUIVALENCIA OPERAD. DATALAB"
+                                },
+                                {
+                                    "Id": "C971G",
+                                    "Descripcion": "ACTUALIZA PAQUETE INTEGRAL"
+                                },
+                                {
+                                    "Id": "C971H",
+                                    "Descripcion": "ACTUALIZA COMUNIDAD"
+                                },
+                                {
+                                    "Id": "C971F",
+                                    "Descripcion": "REGRESAR AL MENU ANTERIOR"
+                                }
+                            ]
+                        },
+                        {
+                            "Id": "C972",
+                            "Descripcion": "MENU LISTADO DE TARIFAS",
+                            "Sub": [
+                                {
+                                    "Id": "C9721",
+                                    "Descripcion": "LISTA GENERAL DE TARIFAS"
+                                },
+                                {
+                                    "Id": "C9722",
+                                    "Descripcion": "LISTA DE TARIFAS POR TIPO"
+                                },
+                                {
+                                    "Id": "C9723",
+                                    "Descripcion": "LISTA DE TARIFAS POR CONVEN."
+                                },
+                                {
+                                    "Id": "C9724",
+                                    "Descripcion": "CATALOGO DE GRUPOS SERVICIOS"
+                                },
+                                {
+                                    "Id": "C9725",
+                                    "Descripcion": "CATALOGO DE PROCEDIM. (CUPS)"
+                                },
+                                {
+                                    "Id": "C9726",
+                                    "Descripcion": "LISTADO DE TARIFAS X CONTRATO"
+                                },
+                                {
+                                    "Id": "C9727",
+                                    "Descripcion": "PLANO DE TARIFAS POR CONVEN."
+                                },
+                                {
+                                    "Id": "C972F",
+                                    "Descripcion": "REGRESAR AL MENU ANTERIOR"
+                                }
+                            ]
+                        },
+                        {
+                            "Id": "C973",
+                            "Descripcion": "MENU CONVENIOS",
+                            "Sub": [
+                                {
+                                    "Id": "C9731",
+                                    "Descripcion": "ACTUALIZAR CONVENIOS"
+                                },
+                                {
+                                    "Id": "C9732",
+                                    "Descripcion": "LISTADO DE CONVENIOS"
+                                },
+                                {
+                                    "Id": "C9733",
+                                    "Descripcion": "CONVENIO MEDICAMENTO"
+                                },
+                                {
+                                    "Id": "C9734",
+                                    "Descripcion": "DUPLICAR CONVENIO MEDICAMEN"
+                                },
+                                {
+                                    "Id": "C9735",
+                                    "Descripcion": "LISTADO DE CONVENIOS MEDICA"
+                                },
+                                {
+                                    "Id": "C9736",
+                                    "Descripcion": "RESTRINGIR CUPS POR ENTIDAD"
+                                },
+                                {
+                                    "Id": "C9737",
+                                    "Descripcion": "SUBIR RESTRICC. CUPS ENTIDAD"
+                                },
+                                {
+                                    "Id": "C9738",
+                                    "Descripcion": "CAMBIA UN CONVENIO X NIT"
+                                },
+                                {
+                                    "Id": "C973F",
+                                    "Descripcion": "REGRESAR AL MENU ANTERIOR"
+                                }
+                            ]
+                        },
+                        {
+                            "Id": "C974",
+                            "Descripcion": "MENU FACTURACION DE SALUD",
+                            "Sub": [
+                                {
+                                    "Id": "C9741",
+                                    "Descripcion": "APERTURA DE FACTURAS",
+                                    "Sub": [
+                                        {
+                                            "Id": "C97411",
+                                            "Descripcion": "APERTURA DE FACTURAS"
+                                        },
+                                        {
+                                            "Id": "C97412",
+                                            "Descripcion": "DISPERSION DE FACTURAS",
+                                            "Sub": [
+                                                {
+                                                    "Id": "C974121",
+                                                    "Descripcion": "DISPERSION POR COMPROBANTE"
+                                                },
+                                                {
+                                                    "Id": "C974122",
+                                                    "Descripcion": "DISPERSION POR PACIENTE"
+                                                },
+                                                {
+                                                    "Id": "C974123",
+                                                    "Descripcion": "CLONACION DE FACTURA"
+                                                },
+                                                {
+                                                    "Id": "C974124",
+                                                    "Descripcion": "DISPERSION CAPITAL SALUD"
+                                                },
+                                                {
+                                                    "Id": "C97412F",
+                                                    "Descripcion": "REGRESAR AL MENU ANTERIOR"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Id": "C97413",
+                                            "Descripcion": "FACTURAR REMISIONES"
+                                        },
+                                        {
+                                            "Id": "C97414",
+                                            "Descripcion": "DESMARCA REMISIONES FACTURADA"
+                                        },
+                                        {
+                                            "Id": "C97415",
+                                            "Descripcion": "CORRECCION DE FACTURA AUTORIZ"
+                                        },
+                                        {
+                                            "Id": "C9741F",
+                                            "Descripcion": "REGRESAR AL MENU ANTERIOR"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Id": "C9742",
+                                    "Descripcion": "LISTADO DE FACTURACION",
+                                    "Sub": [
+                                        {
+                                            "Id": "C97421",
+                                            "Descripcion": "LISTADO DE FACTURACION"
+                                        },
+                                        {
+                                            "Id": "C97422",
+                                            "Descripcion": "FACTURACION POR CLASE DE COMP"
+                                        },
+                                        {
+                                            "Id": "C97423",
+                                            "Descripcion": "INCONSISTENCIAS CONTRA COMP."
+                                        },
+                                        {
+                                            "Id": "C97424",
+                                            "Descripcion": "INFORME TRAZABILIDAD FACTURAS"
+                                        },
+                                        {
+                                            "Id": "C97425",
+                                            "Descripcion": "MARCAR CAPITACION"
+                                        },
+                                        {
+                                            "Id": "C97426",
+                                            "Descripcion": "LISTADO DE RADICACION"
+                                        },
+                                        {
+                                            "Id": "C97427",
+                                            "Descripcion": "LISTADO DE IMPRESION MASIVO"
+                                        },
+                                        {
+                                            "Id": "C9742F",
+                                            "Descripcion": "REGRESAR AL MENU ANTERIOR"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Id": "C9743",
+                                    "Descripcion": "SUBMENU IMPRESION DE FACTURAS",
+                                    "Sub": [
+                                        {
+                                            "Id": "C97431",
+                                            "Descripcion": "IMPRIMIR FACT. ORDEN PACIENTE"
+                                        },
+                                        {
+                                            "Id": "C97432",
+                                            "Descripcion": "IMPRIMIR FACT. RESUMIDA"
+                                        },
+                                        {
+                                            "Id": "C97433",
+                                            "Descripcion": "IMPRIMIR FACT. ORDEN SERVICIO"
+                                        },
+                                        {
+                                            "Id": "C97434",
+                                            "Descripcion": "IMPRIMIR FACT. SUBTOT PACIENTE"
+                                        },
+                                        {
+                                            "Id": "C97435",
+                                            "Descripcion": "IMPRIMIR FACT. ORDEN FECHA"
+                                        },
+                                        {
+                                            "Id": "C97436",
+                                            "Descripcion": "IMPRIMIR FACT. PAQUETE INTEG."
+                                        },
+                                        {
+                                            "Id": "C97437",
+                                            "Descripcion": "SUB-MENU FACT. SOAT - FOSYGA",
+                                            "Sub": [
+                                                {
+                                                    "Id": "C974371",
+                                                    "Descripcion": "CUENTA COBRO SOAT FOSYGA"
+                                                },
+                                                {
+                                                    "Id": "C974372",
+                                                    "Descripcion": "DILIGENCIAR FORMATO FURIPS"
+                                                },
+                                                {
+                                                    "Id": "C974373",
+                                                    "Descripcion": "REIMPRIMIR FORMATO FURIPS"
+                                                },
+                                                {
+                                                    "Id": "C974374",
+                                                    "Descripcion": "INFORME FURIPS"
+                                                },
+                                                {
+                                                    "Id": "C974375",
+                                                    "Descripcion": "DILIGENCIAR FORMATO FURTRAN"
+                                                },
+                                                {
+                                                    "Id": "C974376",
+                                                    "Descripcion": "REIMPRIMIR FORMATO FURTRAN"
+                                                },
+                                                {
+                                                    "Id": "C974377",
+                                                    "Descripcion": "REIMPRIMIR FORMATO SOAT"
+                                                },
+                                                {
+                                                    "Id": "C97437F",
+                                                    "Descripcion": "REGRESAR AL MENU ANTERIOR"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Id": "C97438",
+                                            "Descripcion": "IMPRIMIR FACT. ORDEN COMPROB"
+                                        },
+                                        {
+                                            "Id": "C97439",
+                                            "Descripcion": "IMPRIMIR FACT. RESOL 3374"
+                                        },
+                                        {
+                                            "Id": "C9743A",
+                                            "Descripcion": "FACT.RESUMEN TAR.PLENA DESCTO"
+                                        },
+                                        {
+                                            "Id": "C9743B",
+                                            "Descripcion": "IMPRESION Y CIERRE MASIVO"
+                                        },
+                                        {
+                                            "Id": "C9743C",
+                                            "Descripcion": "IMPRESION FACTURA DIGITAL"
+                                        },
+                                        {
+                                            "Id": "C9743D",
+                                            "Descripcion": "IMPRIMIR FACT. CAPITACION"
+                                        },
+                                        {
+                                            "Id": "C9743E",
+                                            "Descripcion": "IMPRIMIR FACT. RESUM X CUPS"
+                                        },
+                                        {
+                                            "Id": "C9743G",
+                                            "Descripcion": "IMPRIMIR FACT. ORDEN SALIDA"
+                                        },
+                                        {
+                                            "Id": "C9743H",
+                                            "Descripcion": "IMPRIMIR FACTURA EN CSV"
+                                        },
+                                        {
+                                            "Id": "C9743I",
+                                            "Descripcion": "IMP. FACT. SUBT. PACI. VLR UNI"
+                                        },
+                                        {
+                                            "Id": "C9743J",
+                                            "Descripcion": "IMP. FACT HOGARES DE PASO"
+                                        },
+                                        {
+                                            "Id": "C9743K",
+                                            "Descripcion": "IMP. FACT. MEDICAMENTOS"
+                                        },
+                                        {
+                                            "Id": "C9743L",
+                                            "Descripcion": "MENU DE IMPRESION M.Y.T",
+                                            "Sub": [
+                                                {
+                                                    "Id": "C9743L1",
+                                                    "Descripcion": "COBRO SECRETARIA DE SALUD NP"
+                                                },
+                                                {
+                                                    "Id": "C9743L2",
+                                                    "Descripcion": "IMPRIME FACTURA DE M.Y.T"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Id": "C9743M",
+                                            "Descripcion": "IMPRESION RESUMEN X PACIENTE"
+                                        },
+                                        {
+                                            "Id": "C9743F",
+                                            "Descripcion": "REGRESAR AL MENU ANTERIOR"
+                                        }
+
+                                    ]
+                                },
+                                {
+                                    "Id": "C9744",
+                                    "Descripcion": "RESUMEN FACT. POR TIPO"
+                                },
+                                {
+                                    "Id": "C9745",
+                                    "Descripcion": "INFORME POR PACIENTE",
+                                    "Sub": [
+                                        {
+                                            "Id": "C97451",
+                                            "Descripcion": "INFORME DE COMPROBANTES"
+                                        },
+                                        {
+                                            "Id": "C97452",
+                                            "Descripcion": "INFORME DE FACTURAS"
+                                        },
+                                        {
+                                            "Id": "C9745F",
+                                            "Descripcion": "REGRESAR AL MENU ANTERIOR"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Id": "C9746",
+                                    "Descripcion": "RESUMEN DE CIRUGIAS X ENTIDAD"
+                                },
+                                {
+                                    "Id": "C9747",
+                                    "Descripcion": "LISTADO DE FACTURAS ABIERTAS"
+                                },
+                                {
+                                    "Id": "C9748",
+                                    "Descripcion": "INFORME DE COPAGOS X FACTURA"
+                                },
+                                {
+                                    "Id": "C9749",
+                                    "Descripcion": "ANEXO A FACTURA DE CAPITACION"
+                                },
+                                {
+                                    "Id": "C974A",
+                                    "Descripcion": "SUBMENU BOLETA DE SALIDA",
+                                    "Sub": [
+                                        {
+                                            "Id": "C974A1",
+                                            "Descripcion": "ELABORA BOLETA DE SALIDA"
+                                        },
+                                        {
+                                            "Id": "C974A2",
+                                            "Descripcion": "INFORME DE BOLETAS DE SALIDA"
+                                        },
+                                        {
+                                            "Id": "C974A3",
+                                            "Descripcion": "RELACION COMPROB X BOLETA S."
+                                        },
+                                        {
+                                            "Id": "C974A4",
+                                            "Descripcion": "CONSTANCIA DE SERVICIOS"
+                                        },
+                                        {
+                                            "Id": "C974AF",
+                                            "Descripcion": "REGRESAR AL MENU ANTERIOR"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Id": "C974B",
+                                    "Descripcion": "SUBMENU SOLICITUD AUTORIZAC.",
+                                    "Sub": [
+                                        {
+                                            "Id": "C974B1",
+                                            "Descripcion": "INFORME CONSULTA URGENCIAS"
+                                        },
+                                        {
+                                            "Id": "C974B2",
+                                            "Descripcion": "SOLICITUD AUTORIZAC SERVICIO"
+                                        },
+                                        {
+                                            "Id": "C974B3",
+                                            "Descripcion": "REIMPRIMIR AUTORIZAC SERVICIO"
+                                        },
+                                        {
+                                            "Id": "C974B4",
+                                            "Descripcion": "INCONSIST. BASE DATOS PACIENTE"
+                                        },
+                                        {
+                                            "Id": "C974B5",
+                                            "Descripcion": "ANEXO TECNICO NRO 1 PACIENTE"
+                                        },
+                                        {
+                                            "Id": "C974B6",
+                                            "Descripcion": "CONTROL DE AUTORIZACIONES"
+                                        },
+                                        {
+                                            "Id": "C974B7",
+                                            "Descripcion": "REIMPRIMIR AUTORIZACIONES"
+                                        },
+                                        {
+                                            "Id": "C974B8",
+                                            "Descripcion": "ARCHIVO PLANO AUTORIZACION"
+                                        },
+                                        {
+                                            "Id": "C974BF",
+                                            "Descripcion": "REGRESAR AL MENU ANTERIOR"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Id": "C974F",
+                                    "Descripcion": "REGRESAR AL MENU ANTERIOR"
+                                }
+                            ]
+                        },
+                        {
+                            "Id": "C975",
+                            "Descripcion": "MENU CARTERA",
+                            "Sub": [
+                                {
+                                    "Id": "C9751",
+                                    "Descripcion": "MANTENIMIEN CARTERA CLIENTES",
+                                    "Sub": [
+                                        {
+                                            "Id": "C97511",
+                                            "Descripcion": "ACT. SALDOS CARTERA CLIENTES"
+                                        },
+                                        {
+                                            "Id": "C97512",
+                                            "Descripcion": "ACT. NOVEDADES DE CARTERA"
+                                        },
+                                        {
+                                            "Id": "C97513",
+                                            "Descripcion": "ACT. RADICADO DE CUENTAS"
+                                        },
+                                        {
+                                            "Id": "C97514",
+                                            "Descripcion": "ACT. ESTADO DE COBRANZA"
+                                        },
+                                        {
+                                            "Id": "C97515",
+                                            "Descripcion": "SUB-MENU ENTREGA DE DOCUMENTOS",
+                                            "Sub": [
+                                                {
+                                                    "Id": "C975151",
+                                                    "Descripcion": "FORMATO DE ENTREGA DE DOCUMENTO"
+                                                },
+                                                {
+                                                    "Id": "C975152",
+                                                    "Descripcion": "CONFIRMAR RECIBO DOCUMENTOS"
+                                                },
+                                                {
+                                                    "Id": "C975153",
+                                                    "Descripcion": "IMPRIMIR ACUSE DE RECIBO"
+                                                },
+                                                {
+                                                    "Id": "C975154",
+                                                    "Descripcion": "DEVOLUCION DE FACTURA"
+                                                },
+                                                {
+                                                    "Id": "C97515F",
+                                                    "Descripcion": "REGRESAR AL MENU ANTERIOR"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Id": "C9751F",
+                                            "Descripcion": "REGRESAR AL MENU ANTERIOR"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Id": "C9752",
+                                    "Descripcion": "LISTADO DE CARTERA X EDADES"
+                                },
+                                {
+                                    "Id": "C9753",
+                                    "Descripcion": "LISTADO RESUMIDO DE CARTERA"
+                                },
+                                {
+                                    "Id": "C9754",
+                                    "Descripcion": "LISTADO INTERESES DE CARTERA"
+                                },
+                                {
+                                    "Id": "C9755",
+                                    "Descripcion": "RESUMEN CARTERA MES"
+                                },
+                                {
+                                    "Id": "C9756",
+                                    "Descripcion": "CARTA EXTEMPORANEIDAD GLOSAS"
+                                },
+                                {
+                                    "Id": "C9757",
+                                    "Descripcion": "LISTADO CARTERA ORDEN ACTIV."
+                                },
+                                {
+                                    "Id": "C9758",
+                                    "Descripcion": "LISTADO CARTERA CON GLOSAS"
+                                },
+                                {
+                                    "Id": "C9759",
+                                    "Descripcion": "RECALCULAR CARGOS DE CARTERA"
+                                },
+                                {
+                                    "Id": "C975A",
+                                    "Descripcion": "INFORME RECAUDOS X PEDIDO"
+                                },
+                                {
+                                    "Id": "C975B",
+                                    "Descripcion": "INFORME RECAUDOS X MORA FACT"
+                                },
+                                {
+                                    "Id": "C975C",
+                                    "Descripcion": "INFORME RECAUDOS X REGIMEN"
+                                },
+                                {
+                                    "Id": "C975D",
+                                    "Descripcion": "ARCHIVOS PLANOS MINSALUD",
+                                    "Sub": [
+                                        {
+                                            "Id": "C975D1",
+                                            "Descripcion": "CIRCULAR 030 CARTERA"
+                                        },
+                                        {
+                                            "Id": "C975D2",
+                                            "Descripcion": "CIRCULAR 014 RADICADAS T.149"
+                                        },
+                                        {
+                                            "Id": "C975D3",
+                                            "Descripcion": "CIRCULAR 016 SOAT ST.006"
+                                        },
+                                        {
+                                            "Id": "C975DF",
+                                            "Descripcion": "REGRESAR AL MENU ANTERIOR"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Id": "C975E",
+                                    "Descripcion": "CARTERA RADICADA ORDEN ACTIV"
+                                },
+                                {
+                                    "Id": "C975G",
+                                    "Descripcion": "CARTERA X ACTIV > 1800 DIAS"
+                                },
+                                {
+                                    "Id": "C975H",
+                                    "Descripcion": "INFORMES DECRETO 2193",
+                                    "Sub": [
+                                        {
+                                            "Id": "C975H1",
+                                            "Descripcion": "INFORME CARTERA DEUDOR"
+                                        },
+                                        {
+                                            "Id": "C975H2",
+                                            "Descripcion": "INFORME FACTURACION"
+                                        },
+                                        {
+                                            "Id": "C975H3",
+                                            "Descripcion": "INFORME FACTURACION > 1800 D"
+                                        },
+                                        {
+                                            "Id": "C975H4",
+                                            "Descripcion": "LISTADO INTERESES DE CARTERA"
+                                        },
+                                        {
+                                            "Id": "C975H5",
+                                            "Descripcion": "INFOMRES SANEAMIENTO FISCAL"
+                                        },
+                                        {
+                                            "Id": "C975H6",
+                                            "Descripcion": "MECANISMO DE PAGO"
+                                        },
+                                        {
+                                            "Id": "C975HF",
+                                            "Descripcion": "REGRESAR AL MENU ANTERIOR"
+                                        }
+
+                                    ]
+                                },
+                                {
+                                    "Id": "C975F",
+                                    "Descripcion": "REGRESAR AL MENU ANTERIOR"
+                                }
+                            ]
+                        },
+                        {
+                            "Id": "C976",
+                            "Descripcion": "MENU ADMINISTRACION SALUD",
+                            "Sub": [
+                                {
+                                    "Id": "C9761",
+                                    "Descripcion": "CONTABILIZAR AMBULATORIO"
+                                },
+                                {
+                                    "Id": "C9762",
+                                    "Descripcion": "CONTABILIZAR PENSIONADO"
+                                },
+                                {
+                                    "Id": "C9763",
+                                    "Descripcion": "CONTABILIZAR FACT- ABIERTAS"
+                                },
+                                {
+                                    "Id": "C9764",
+                                    "Descripcion": "TRASL. SALDOS CARTERA ANUAL"
+                                },
+                                {
+                                    "Id": "C9765",
+                                    "Descripcion": "ASIGNA NUEVO NIT A COMPROB"
+                                },
+                                {
+                                    "Id": "C9766",
+                                    "Descripcion": "TRASL. COMPROB A OTRA FACTURA"
+                                },
+                                {
+                                    "Id": "C9767",
+                                    "Descripcion": "TRASL.MOV. DE UN CUP A OTRO"
+                                },
+                                {
+                                    "Id": "C9768",
+                                    "Descripcion": "REFACTURAR COMPROB. GLOSADOS",
+                                    "Sub": [
+                                        {
+                                            "Id": "C97681",
+                                            "Descripcion": "REFACTURAR COMP. GLOSADOS"
+                                        },
+                                        {
+                                            "Id": "C97682",
+                                            "Descripcion": "DES-MARCAR COMPROB. REFACT."
+                                        },
+                                        {
+                                            "Id": "C9768F",
+                                            "Descripcion": "REGRESAR AL MENU PRINCIPAL"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Id": "C9769",
+                                    "Descripcion": "RELIQUIDAR COMPROB. FACTURAS"
+                                },
+                                {
+                                    "Id": "C976A",
+                                    "Descripcion": "TRASL. LECTURA A OTRO COMPROB."
+                                },
+                                {
+                                    "Id": "C976B",
+                                    "Descripcion": "CONTABILIZAR FACT. RADICADAS"
+                                },
+                                {
+                                    "Id": "C976C",
+                                    "Descripcion": "CARGAR VACUNACION PAIWEB"
+                                },
+                                {
+                                    "Id": "C976D",
+                                    "Descripcion": "RELIQUIDA COMPROB X NIT FECHA"
+                                }
+                            ]
+                        },
+                        {
+                            "Id": "C977",
+                            "Descripcion": "MENU PACIENTES Y ESTADISTICA",
+                            "Sub": [
+                                {
+                                    "Id": "C9771",
+                                    "Descripcion": "ACTUALIZAR TABLAS",
+                                    "Sub": [
+                                        {
+                                            "Id": "C97711",
+                                            "Descripcion": "TABLA DE ENFERMEDADES"
+                                        },
+                                        {
+                                            "Id": "C97712",
+                                            "Descripcion": "TABLA DE MEDICAMENTOS POS"
+                                        },
+                                        {
+                                            "Id": "C97713",
+                                            "Descripcion": "TABLA DE ESPECIALIDADES"
+                                        },
+                                        {
+                                            "Id": "C97714",
+                                            "Descripcion": "TABLA DE OCUPACIONES"
+                                        },
+                                        {
+                                            "Id": "C97715",
+                                            "Descripcion": "TABLAS PARA HISTORIA CLINIC",
+                                            "Sub": [
+                                                {
+                                                    "Id": "C977151",
+                                                    "Descripcion": "ACTUALIZAR FARMACOS"
+                                                },
+                                                {
+                                                    "Id": "C977152",
+                                                    "Descripcion": "ACTUALIZAR LABORATORIOS"
+                                                },
+                                                {
+                                                    "Id": "C977153",
+                                                    "Descripcion": "ACTUALIZAR IMAGENOLOGIA"
+                                                },
+                                                {
+                                                    "Id": "C977154",
+                                                    "Descripcion": "ACTULIZAR ORDENES MEDICAS"
+                                                },
+                                                {
+                                                    "Id": "C977155",
+                                                    "Descripcion": "ACTULIZAR CONSULTAS Y TERAP"
+                                                },
+                                                {
+                                                    "Id": "C977156",
+                                                    "Descripcion": "ACTULIZAR MACROS FORMULAC."
+                                                },
+                                                {
+                                                    "Id": "C977157",
+                                                    "Descripcion": "ACTUALIZAR MACROS EVOLUCION"
+                                                },
+                                                {
+                                                    "Id": "C977158",
+                                                    "Descripcion": "ACTUALIZAR SALAS DE CIRUGIA"
+                                                },
+                                                {
+                                                    "Id": "C97715F",
+                                                    "Descripcion": "REGRESAR AL MENU ANTERIOR"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Id": "C97716",
+                                            "Descripcion": "TABLA DE VIAS DE ACCESO"
+                                        },
+                                        {
+                                            "Id": "C97717",
+                                            "Descripcion": "TABLA DE COD. MEDICAM. ATC"
+                                        },
+                                        {
+                                            "Id": "C97718",
+                                            "Descripcion": "TABLA DE GRUPO TERAPEUTICO"
+                                        },
+                                        {
+                                            "Id": "C97719",
+                                            "Descripcion": "TABLA PROTOCOLOS EXAMENES"
+                                        },
+                                        {
+                                            "Id": "C9771A",
+                                            "Descripcion": "TABLA DE CODIGOS IPS"
+                                        },
+                                        {
+                                            "Id": "C9771B",
+                                            "Descripcion": "TABLA DE PATOLOGIAS CRONICA"
+                                        },
+                                        {
+                                            "Id": "C9771C",
+                                            "Descripcion": "TABLA DE SIGNOS TRIAGE"
+                                        },
+                                        {
+                                            "Id": "C9771D",
+                                            "Descripcion": "TABLA DE CRECIMIENTO OMS"
+                                        },
+                                        {
+                                            "Id": "C9771E",
+                                            "Descripcion": "HABILITAR CONSULTORIOS URG"
+                                        },
+                                        {
+                                            "Id": "C9771G",
+                                            "Descripcion": "TABLA CUPS NUEVOS",
+                                            "Sub": [
+                                                {
+                                                    "Id": "C9771G1",
+                                                    "Descripcion": "CATALOGO CUPS NUEVOS"
+                                                },
+                                                {
+                                                    "Id": "C9771G2",
+                                                    "Descripcion": "CAMBIO CUPS NUEVOS"
+                                                },
+                                                {
+                                                    "Id": "C9771GF",
+                                                    "Descripcion": "REGRESAR AL MENU ANTERIOR"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Id": "C9771H",
+                                            "Descripcion": "HABILITAR SALAS DE CIRUGIAS"
+                                        },
+                                        {
+                                            "Id": "C9771F",
+                                            "Descripcion": "REGRESAR AL MENU ANTERIOR"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Id": "C9772",
+                                    "Descripcion": "ACTUALIZAR RIPS"
+                                },
+                                {
+                                    "Id": "C9773",
+                                    "Descripcion": "VALIDACION DE RIPS",
+                                    "Sub": [
+                                        {
+                                            "Id": "C97731",
+                                            "Descripcion": "VALIDACION DE RIPS POR FACT"
+                                        },
+                                        {
+                                            "Id": "C97732",
+                                            "Descripcion": "INFORME ANEXO 8 COLMEDICO"
+                                        },
+                                        {
+                                            "Id": "C97733",
+                                            "Descripcion": "VALIDACION DE RIPS CIUDAD"
+                                        },
+                                        {
+                                            "Id": "C97734",
+                                            "Descripcion": "BUSQUEDA COMP.DIAGNOSTICO"
+                                        },
+                                        {
+                                            "Id": "C97735",
+                                            "Descripcion": "BUSQUEDA COMP. CUPS X EDAD"
+                                        },
+                                        {
+                                            "Id": "C97736",
+                                            "Descripcion": "BUSQUEDA RIPS NACIMIENTOS"
+                                        },
+                                        {
+                                            "Id": "C97737",
+                                            "Descripcion": "BUSQUEDA DIAGN.HIST CLINICAS"
+                                        },
+                                        {
+                                            "Id": "C97738",
+                                            "Descripcion": "RELACION DE HIST. CLINICAS"
+                                        },
+                                        {
+                                            "Id": "C97739",
+                                            "Descripcion": "ARCHIVO PLANO DE COPAGOS"
+                                        },
+                                        {
+                                            "Id": "C9773A",
+                                            "Descripcion": "ARCHIVO PLANO DE COPAGOS"
+                                        },
+                                        {
+                                            "Id": "C9773B",
+                                            "Descripcion": "VALIDACION FACT BASE DATOS"
+                                        },
+                                        {
+                                            "Id": "C9773C",
+                                            "Descripcion": "INFORME ANEXO 8 COLM-AUTORI"
+                                        },
+                                        {
+                                            "Id": "C9773F",
+                                            "Descripcion": "REGRESAR AL MENU ANTERIOR"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Id": "C9774",
+                                    "Descripcion": "GENERAR ARCHIVOS PLANOS",
+                                    "Sub": [
+                                        {
+                                            "Id": "",
+                                            "Descripcion": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Id": "C9775",
+                                    "Descripcion": "LISTADOS DE ESTADISTICA"
+
+                                },
+                                {
+                                    "Id": "C9776",
+                                    "Descripcion": "MANTENIMIENTO DE PACIENTES"
+                                },
+                                {
+                                    "Id": "C9777",
+                                    "Descripcion": "SELECCIONAR BUSQUEDA HIST."
+                                },
+                                {
+                                    "Id": "C9778",
+                                    "Descripcion": "CONSULTA DE RESULTADOS LAB"
+                                },
+                                {
+                                    "Id": "C9779",
+                                    "Descripcion": "CONSULTA DE RESULTADOS RX"
+                                },
+                                {
+                                    "Id": "C977A",
+                                    "Descripcion": "IMPRIMIR LABORATORIOS X PACI"
+                                },
+                                {
+                                    "Id": "C977F",
+                                    "Descripcion": "REGRESAR AL MENU ANTERIOR"
+                                }
+                            ]
+                        },
+                        {
+                            "Id": "C978",
+                            "Descripcion": "MENU DE UTILITARIOS"
+                        },
+                        {
+                            "Id": "C979",
+                            "Descripcion": "CONTROL DE CONTRATACION"
+                        },
+                        {
+                            "Id": "C97A",
+                            "Descripcion": "MENU MANEJO DE GLOSAS"
+                        },
+                        {
+                            "Id": "C97B",
+                            "Descripcion": "MENU P.Q.R"
+                        },
+                        {
+                            "Id": "C97C",
+                            "Descripcion": "MENU CITAS (AGENDAMIENTO)"
+                        },
+                        {
+                            "Id": "C97D",
+                            "Descripcion": "MENU CARTERA RED EXTERNA"
+                        },
+                        {
+                            "Id": "C97E",
+                            "Descripcion": "MENU PAMEC"
+                        },
+                        {
+                            "Id": "C97F",
+                            "Descripcion": "REGRESAR AL MENU PRINCIPAL"
+                        }
+                    ]
+                },
+                {
+                    "Id": "C98",
+                    "Descripcion": "MENU CONTRATACION"
+                },
+                {
+                    "Id": "C99",
+                    "Descripcion": "COTIZACIONES"
+                },
+                {
+                    "Id": "C9A",
+                    "Descripcion": "PEDIDOS DE VENTA"
+                }
+
+            ]
+        },
+        {
+            "Id": "CA",
+            "Descripcion": "MENU DE SUCURSALES"
+        },
+        {
+            "Id": "S",
+            "Descripcion": "SALIR DEL PROGRAMA"
+        }
+    ]
+}
+
