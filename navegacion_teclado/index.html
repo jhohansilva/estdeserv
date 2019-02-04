@@ -96,8 +96,19 @@
     function mostrar_menu(list) {        
         if (list.length != 0) {
             $('#navegacion').html('');
-            jQuery.each(list, function (idx) {
-                $('#navegacion').append('<li class="opcion-menu" id="' + (idx + 1) + '" data-id="' + this.Id + '">' + this.Descripcion + '</li>')
+            jQuery.each(list, function (idx) {                
+                let index = idx + 1;
+
+                if(index  == 10) index = 'A';
+                else if(index  == 11) index = 'B';
+                else if(index  == 12) index = 'C';
+                else if(index  == 13) index = 'D';
+                else if(index  == 14) index = 'E';
+                else if(index  == 15) index = 'G';
+                else if(index  == 16) index = 'H';
+                else if(index  == 17) index = 'I';
+
+                $('#navegacion').append('<li class="opcion-menu" id="' + index + '" data-id="' + this.Id + '">'+ this.Id + ' - ' + this.Descripcion + '</li>')
             });
         }else{
             console.log('Sin opciones')
