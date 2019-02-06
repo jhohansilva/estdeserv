@@ -10,26 +10,29 @@
         btn_id: 'alert_btn',
         btn_text: 'Aceptar',
 
-        alert: function (params, callback) {
-            console.log(params)
-            if (params.tipo == null) params.tipo = 'Alert';
-            if (params.titulo == null) params.titulo = 'Alerta';
+        alert: function (params, callback) {            
+            params.tipo = params.tipo ? params.tipo : 'Alert';
+            params.titulo = params.titulo ? params.titulo : 'Alerta';
             $.alerts._show(params);
-            if (callback) callback(callback);
+
+            $('#' + $.alerts.btn_id).on('click', function () {
+                $.alerts._eventBtn();
+                if (callback) callback(callback);
+            })
         },
 
         _show: function (params) {
             $.alerts._overlay('show');
 
             // Container main alert
-            $('#' + $.alerts.overlay_id).append('<div id="' + $.alerts.container_id + '"></div>');
+            $('#' + $.alerts.overlay_id).html('').append('<div id="' + $.alerts.container_id + '"></div>');
             $('#' + $.alerts.container_id).css({
                 background: '#FFF',
                 width: '20%',
                 height: 'auto',
                 margin: '0 auto',
                 'box-shadow': 'box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.1), 0 0 15px rgba(0, 0, 0, 0.06);',
-                'border-radius': '2px'
+                'border-radius': '3px'
             });
 
             $('#' + $.alerts.container_id).append(''
@@ -76,28 +79,40 @@
             $('.' + $.alerts.foot_class).css({
                 width: '100%',
                 height: 'auto',
-                background: '#f4f8ff',
+                background: '#f6fbff',
                 'border-radius': '0px 0px 3px 3px'
             });
 
             //Footer btn style
             $('.' + $.alerts.foot_class + "_container").append(''
-                + '<button id="' + $.alerts.btn_id + '">' 
-                +   $.alerts.btn_text 
+                + '<button id="' + $.alerts.btn_id + '">'
+                + $.alerts.btn_text
                 + '</button>'
                 + '<div style="clear:both"></div>');
 
             $('#' + $.alerts.btn_id).css({
                 width: 'auto',
-                padding: '10px 25px',
+                height: 'auto',
+                padding: '13px 25px',
                 margin: '10px',
                 float: 'right',
                 background: '#0e86cc',
                 color: '#FFF',
-                'font-size': '14px',
-                'letter-spacing': 'normal',
-                'font-weight': '600!important',
-            });
+                'font-size': '12px',
+                'letter-spacing': '1px',
+                'text-rendering': 'optimizeLegibility'
+            }).hover(
+                function () {
+                    $(this).css({
+                        'background': '#08659c'
+                    })
+                },
+                function () {
+                    $(this).css({
+                        'background': '#0e86cc'
+                    })
+                }
+            );
 
         },
 
@@ -110,13 +125,25 @@
                 top: '0',
                 left: '0',
                 background: 'rgba(0,0,0,0.8)',
-                display: 'flex',
                 'align-items': 'center'
-            })
-        }
+            }).css("display", "flex")
+                .hide()
+                .fadeIn();
+        },
+
+        _eventBtn: function () {
+            $.alerts._hide();
+        },
+
+        _hide: function () {
+            $('#' + $.alerts.overlay_id).fadeOut('fast', function () {
+                $(this).remove();
+            });
+        },
     }
 
     jAlert = function (params, callback) {
         $.alerts.alert(params, callback);
     }
+
 })(jQuery);
