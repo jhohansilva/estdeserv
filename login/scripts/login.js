@@ -1,14 +1,21 @@
 $(document).ready(principal);
 
 function principal() {
+	jAlert({
+      titulo: 'Error COBOL',
+      mensaje: '<b>ID:</b> 99 </br>'
+	  + '<b>Descri:</b> Error de estrucutra </br>'
+	  + '<b>Programa:</b> EST000.DLL </br>'
+    },function(){
+		console.log('El usuario acepto');
+	});
+	
   $('#toogleClave').click(toogleClave);
 
   $('#validarForm').click(function () {
     jAlert({
       titulo: 'Error ingresando',
       mensaje: 'Esto es una prueba de las notificaciones'
-    }, function () {
-      console.log('Prueba callback');
     });
   })
 

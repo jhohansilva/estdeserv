@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <div class="titulo">PRINCIPAL</div>
     <ul id="navegacion"></ul>
     <button id="regresar">Regresar</button>
 </body>
@@ -25,7 +26,6 @@
             $_MENU = data.Menu;
             mostrar_menu($_MENU)
             organizar_array($_MENU);
-            console.log(buscar_opcion("1"))
         });
     });
 
@@ -33,7 +33,6 @@
     $(document).keydown(function (e) {
         var opcion;
         var key = e.which;
-        console.log(key)
         if (key == "97" || key == "49") opcion = "1";
         else if (key == "98" || key == "50") opcion = "2";
         else if (key == "99" || key == "51") opcion = "3";
@@ -57,9 +56,10 @@
 
     $(function () {
         $(document).on('click', '.opcion-menu', function (event) {
-            var idOpcion = $(this).data().id.toString();            
-            var nuevaLista = buscar_opcion(idOpcion);            
+            var idOpcion = $(this).data().id.toString();
+            var nuevaLista = buscar_opcion(idOpcion);
             mostrar_menu(nuevaLista)
+            set_titulo(idOpcion)
         });
     });
 
@@ -67,9 +67,12 @@
         $(document).on('click', '#regresar', function (event) {
             var idOpcion = $('#navegacion').find('li.opcion-menu');
             idOpcion = $(idOpcion).data().id.toString()
-            idOpcion = idOpcion.substring(0, idOpcion.length - 2);            
-            var nuevaLista = buscar_opcion(idOpcion.toString());
-            mostrar_menu(nuevaLista)
+            idOpcion = idOpcion.substring(0, idOpcion.length - 2);
+            if (idOpcion.length != 0) {
+                var nuevaLista = buscar_opcion(idOpcion.toString());
+                mostrar_menu(nuevaLista)
+            }
+            set_titulo(idOpcion)
         });
     });
 
@@ -93,24 +96,35 @@
         return retorno;
     }
 
-    function mostrar_menu(list) {        
+    function set_titulo(val) {
+        console.log(val)
+        var title;
+        for (var i in $_ARRAY) 
+            if ($_ARRAY[i].Id == val) title = $_ARRAY[i].Descripcion;
+
+        console.log(title)
+        title = title ? title : 'PRINCIPAL'
+        $('.titulo').html(title);
+    }
+
+    function mostrar_menu(list) {
         if (list.length != 0) {
             $('#navegacion').html('');
-            jQuery.each(list, function (idx) {                
+            jQuery.each(list, function (idx) {
                 let index = idx + 1;
 
-                if(index  == 10) index = 'A';
-                else if(index  == 11) index = 'B';
-                else if(index  == 12) index = 'C';
-                else if(index  == 13) index = 'D';
-                else if(index  == 14) index = 'E';
-                else if(index  == 15) index = 'G';
-                else if(index  == 16) index = 'H';
-                else if(index  == 17) index = 'I';
+                if (index == 10) index = 'A';
+                else if (index == 11) index = 'B';
+                else if (index == 12) index = 'C';
+                else if (index == 13) index = 'D';
+                else if (index == 14) index = 'E';
+                else if (index == 15) index = 'G';
+                else if (index == 16) index = 'H';
+                else if (index == 17) index = 'I';
 
-                $('#navegacion').append('<li class="opcion-menu" id="' + index + '" data-id="' + this.Id + '">'+ this.Id + ' - ' + this.Descripcion + '</li>')
+                $('#navegacion').append('<li class="opcion-menu" id="' + index + '" data-id="' + this.Id + '">' + this.Id + ' - ' + this.Descripcion + '</li>')
             });
-        }else{
+        } else {
             console.log('Sin opciones')
         }
     }

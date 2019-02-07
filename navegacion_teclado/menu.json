@@ -98,7 +98,11 @@
                                 },
                                 {
                                     "Id": "C9718",
-                                    "Descripcion": "ACTUALIZAR CODIGOS CUPS"
+                                    "Descripcion": "ACTUALIZAR CODIGOS CUPS",
+									"Sub": [{
+										"Id": "C97181",
+										"Descripcion": "Prueba"
+									}]
                                 },
                                 {
                                     "Id": "C9719",
