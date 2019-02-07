@@ -18,9 +18,10 @@
             $('#' + $.ventop.overlay_id).html('').append('<div id="' + $.ventop.container_id + '"></div>');
             $('#' + $.ventop.container_id).css({
                 background: '#FFF',
-                width: '20%',
+                width: '16%',
                 height: 'auto',
                 margin: '0 auto',
+                'min-width': '220px',
                 'box-shadow': 'box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.1), 0 0 15px rgba(0, 0, 0, 0.06);',
                 'border-radius': '3px'
             });
@@ -57,7 +58,7 @@
             $('.' + $.ventop.body_class + '_container > ol').css({
                 'list-style': 'none',
                 'margin': '0 auto',
-                'padding': '0 0 1px 0'
+                'padding': '0 0 2px 0'
             })
 
             $('.' + $.ventop.body_class + '_container > ol > li').css({
@@ -166,8 +167,8 @@
             @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');\
             .active{\
                 background:aliceblue;\
-            }\
-            </style>"
+            }"
+            + "</style>"
             ).appendTo("head");
         }
     }
