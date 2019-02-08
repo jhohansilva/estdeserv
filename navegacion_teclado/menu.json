@@ -2,7 +2,8 @@
     "Menu": [
         {
             "Id": "C1",
-            "Descripcion": "ARCHIVOS MAESTROS"
+            "Descripcion": "ARCHIVOS MAESTROS",
+            "Href" : "paginas/maestros.html"
         },
         {
             "Id": "C2",
@@ -70,7 +71,8 @@
                             "Sub": [
                                 {
                                     "Id": "C9711",
-                                    "Descripcion": "ACTUALIZAR GRUPOS CUPS"
+                                    "Descripcion": "ACTUALIZAR GRUPOS CUPS",
+                                    "Href" : "paginas/act_cups.html"
                                 },
                                 {
                                     "Id": "C9712",
