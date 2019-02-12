@@ -1,6 +1,9 @@
 (function ($) {
-    var callback = "";
+
     $.f8 = {
+        _callback: null,
+        _array: null,
+
         createModal: function () {
             $.f8._addFont();
             $("body").append('<div class="overlay-f8"></div>');
@@ -27,10 +30,11 @@
                 + '</div>'
             );
 
+            $('#busq_f8').focus();
 
         },
 
-        show: function (construct, callback) {
+        show: function (construct) {
             let titulo = construct.title ? construct.title : 'Alerta';
             $("#modal_f8 .header-f8 .titulo").html(titulo);
 
@@ -67,33 +71,34 @@
             // $('button[data-dismiss="f8"]').on('click', $.f8.hide);
         },
 
-        _eventKey: function (array, callback) {
+        _eventKey: function () {
             $(document).on('keydown', $.f8._functKey)
-            // $("input#busq_f8").keyup(function (e) {
-            //     if ((e.which >= 38 && e.which <= 40) || (e.which === 27 || e.which === 13)) {
-            //         $.f8.options(e.which, array, callback);
-            //     } else {
-            //         $.f8.search(elemento = this);
-            //     }
-            // });
+            $('#busq_f8').on('keydown', $.f8.search)
         },
 
-        _functKey: function(e){
-            console.log(e.which);
+        _functKey: function (e) {
+            if ((e.which >= 38 && e.which <= 40) || (e.which === 27 || e.which === 13)) {
+                $.f8.options(e.which);
+            }
         },
 
-        search: function (a) {
-            $(".focus-f8").removeClass('focus-f8');
-            $.each($("#table_f8 tbody tr"), function () {
-                if ($(this).text().toLowerCase().indexOf($(a).val().toLowerCase()) === -1) {
-                    $(this).hide().removeClass('bandera');
-                } else {
-                    $(this).show().addClass('bandera');
-                }
-            });
+        search: function (e) {
+            if ((e.which >= 38 && e.which <= 40) || (e.which === 27 || e.which === 13)) {
+                $.f8.options(e.which);
+            } else {
+                var element = this;
+                $(".focus-f8").removeClass('focus-f8');
+                $.each($("#table_f8 tbody tr"), function () {
+                    if ($(this).text().toLowerCase().indexOf($(element).val().toLowerCase()) === -1) {
+                        $(this).hide().removeClass('bandera');
+                    } else {
+                        $(this).show().addClass('bandera');
+                    }
+                });
+            }
         },
 
-        options: function (e, array, callback) {
+        options: function (e) {
             elementoActive = $(".focus-f8");
             elemento = $("#table_f8 tbody tr:visible");
             if (elementoActive.length === 0) { $(elemento[0]).addClass('focus-f8'); }
@@ -120,7 +125,7 @@
                         break;
                     case 13:
                         if ($(elementoActive).length === 1) {
-                            $.f8.select($(elementoActive), array, callback);
+                            $.f8.select($(elementoActive));
                         }
                         break;
                 }
@@ -128,7 +133,9 @@
 
         },
 
-        select: function (response, array, callback) {
+        select: function (response) {
+            var array = $.f8._array.array;
+            var callback = $.f8._callback;
             var resp = '';
             $.each(array, function (k, v) {
                 if (parseInt($(response).attr('id')) === k) {
@@ -285,11 +292,17 @@
     }
 
     f8Popup = function (array, callback) {
+        $.f8._callback = callback;
+        $.f8._array = array;
+
         $.f8.createModal();
         $.f8.show(array, callback);
         $.f8._setCss();
         $.f8._eventKey(array, callback);
-        $('#table_f8 tbody tr').click(function () { $.f8.select(this, array.array, callback) });
+        $('#table_f8 tbody tr').click(function () {
+            $.f8.select(this)
+        }
+        );
     }
 
 })(jQuery);
