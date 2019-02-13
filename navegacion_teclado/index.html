@@ -48,6 +48,7 @@
             organizar_array($_MENU);
             _cargarEventos('on');
             _addFocoEvent('nav');
+            $._data('.opcion-menu', "events");
         });
     });
 
@@ -59,19 +60,20 @@
                 $('#regresar').on('click', _eventoRegresar)
                 break;
             case "off":
-                $(document).off('click', '.opcion-menu', _eventoBotones)
+                // $(document).off('click', '.opcion-menu', _eventoBotones)
                 $(document).off('keydown', _eventoTeclas);
-                $('#regresar').off('click', _eventoRegresar)
+                // $('#regresar').off('click', _eventoRegresar)
                 break;
         }
     }
 
-    function _addFocoEvent(selector) {
+    function _addFocoEvent(selector) {        
         $('.focoTeclas').removeClass('focoTeclas');
         $(selector).addClass('focoTeclas');
     }
 
     function _eventoBotones() {
+        _addFocoEvent('nav');
         var idOpcion = $(this).data().id.toString();
         var nuevaLista = buscar_opcion(idOpcion);
         if (nuevaLista != false) {
@@ -88,6 +90,7 @@
     }
 
     function _eventoRegresar() {
+        _addFocoEvent('nav');
         var idOpcion = $('#navegacion').find('li.opcion-menu');
         idOpcion = $(idOpcion).data().id.toString()
         idOpcion = idOpcion.substring(0, idOpcion.length - 2);
@@ -122,58 +125,6 @@
 
         if (opcion) $('#' + opcion).click();
     }
-
-    // $(document).keydown(function (e) {
-    //     var opcion;
-    //     var key = e.which;
-    //     if (key == "97" || key == "49") opcion = "1";
-    //     else if (key == "98" || key == "50") opcion = "2";
-    //     else if (key == "99" || key == "51") opcion = "3";
-    //     else if (key == "100" || key == "52") opcion = "4";
-    //     else if (key == "101" || key == "53") opcion = "5";
-    //     else if (key == "102" || key == "54") opcion = "6";
-    //     else if (key == "103" || key == "55") opcion = "7";
-    //     else if (key == "104" || key == "56") opcion = "8";
-    //     else if (key == "105" || key == "57") opcion = "9";
-    //     else if (key == "65") opcion = "A";
-    //     else if (key == "66") opcion = "B";
-    //     else if (key == "67") opcion = "C";
-    //     else if (key == "68") opcion = "D";
-    //     else if (key == "69") opcion = "E";
-    //     else if (key == "71") opcion = "G";
-    //     else if (key == "72") opcion = "H";
-    //     else if (key == "70" || key == "27") opcion = "regresar";
-    //     else { opcion = null; console.error('Tecla no definida'); }
-    //     if (opcion) $('#' + opcion).click();
-    // });
-
-    // $(function () {
-    //     $(document).on('click', '.opcion-menu', function (event) {
-    //         var idOpcion = $(this).data().id.toString();
-    //         var nuevaLista = buscar_opcion(idOpcion);
-    //         if (nuevaLista != false) {
-    //             mostrar_menu(nuevaLista);
-    //             set_titulo(idOpcion);
-    //         } else {
-    //             var href = validate_href(idOpcion);
-    //             if (href == false) console.error('Programa no definido')
-    //             else console.log(href); load_contenido(href);
-    //         }
-    //     });
-    // });
-
-    // $(function () {
-    //     $(document).on('click', '#regresar', function (event) {
-    //         var idOpcion = $('#navegacion').find('li.opcion-menu');
-    //         idOpcion = $(idOpcion).data().id.toString()
-    //         idOpcion = idOpcion.substring(0, idOpcion.length - 2);
-    //         if (idOpcion.length != 0) {
-    //             var nuevaLista = buscar_opcion(idOpcion.toString());
-    //             mostrar_menu(nuevaLista)
-    //         }
-    //         set_titulo(idOpcion)
-    //     });
-    // });
 
     function organizar_array(obj) {
         for (var i in obj) {
