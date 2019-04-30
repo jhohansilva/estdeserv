@@ -39,7 +39,7 @@
     var $_ARRAY = [];
     $(document).ready(function () {
         $.ajax({
-            url: "menu.json",
+            url: "menu_bombas.json",
             type: "GET",
             dataType: 'json'
         }).done(function (data) {
@@ -92,6 +92,7 @@
     function _eventoRegresar() {
         _addFocoEvent('nav');
         var idOpcion = $('#navegacion').find('li.opcion-menu');
+        console.log(idOpcion)
         idOpcion = $(idOpcion).data().id.toString()
         idOpcion = idOpcion.substring(0, idOpcion.length - 2);
         if (idOpcion.length != 0) {
@@ -146,6 +147,7 @@
     }
 
     function buscar_opcion(idOpcion) {
+        console.log(idOpcion)
         var retorno = [];
         for (var i in $_ARRAY) {
             let id_tmp = $_ARRAY[i].Id.substring(0, $_ARRAY[i].Id.length - 1);
@@ -198,7 +200,8 @@
                 else if (index == 16) index = 'H';
                 else if (index == 17) index = 'I';
 
-                $('#navegacion').append('<li class="opcion-menu" id="' + index + '" data-id="' + this.Id + '">' + this.Id + ' - ' + this.Descripcion + '</li>')
+                let id = this.Id.substring(1,this.Id.length);
+                $('#navegacion').append('<li class="opcion-menu" id="' + index + '" data-id="' + this.Id + '">' + id + ' - ' + this.Descripcion + '</li>')
             });
         } else {
             console.error('Sin opciones')

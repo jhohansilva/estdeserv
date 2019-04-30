@@ -5,7 +5,7 @@
         _array: null,
 
         createModal: function () {
-            $.f8._addFont();
+            // $.f8._addFont();
             $("body").append('<div class="overlay-f8"></div>');
 
             $('.overlay-f8').append('<div id="modal_f8" class="modal-f8"></div>');
@@ -84,7 +84,7 @@
 
         search: function (e) {
             if ((e.which >= 38 && e.which <= 40) || (e.which === 27 || e.which === 13)) {
-                $.f8.options(e.which);
+                // $.f8.options(e.which);
             } else {
                 var element = this;
                 $(".focus-f8").removeClass('focus-f8');
@@ -101,6 +101,7 @@
         options: function (e) {
             elementoActive = $(".focus-f8");
             elemento = $("#table_f8 tbody tr:visible");
+            console.log(elemento)
             if (elementoActive.length === 0) { $(elemento[0]).addClass('focus-f8'); }
             if (elemento.length !== 0) {
                 switch (e) {
@@ -271,13 +272,14 @@
 
         },
 
-        _addFont: function () {
-            var link = document.createElement('link');
-            link.setAttribute('rel', 'stylesheet');
-            link.setAttribute('type', 'text/css');
-            link.setAttribute('href', 'https://fonts.googleapis.com/css?family=Sarabun:200,300,400,500,600,700');
-            document.head.appendChild(link);
-        },
+        // _addFont: function () {            
+        //     var link = document.createElement('link');
+        //     link.setAttribute('id', 'fontF8');
+        //     link.setAttribute('rel', 'stylesheet');
+        //     link.setAttribute('type', 'text/css');
+        //     link.setAttribute('href', 'https://fonts.googleapis.com/css?family=Sarabun:200,300,400,500,600,700');
+        //     document.head.appendChild(link);
+        // },
 
         _validarColumnas: function (columnas_array, columnas_mostrar) {
             var flag = true;

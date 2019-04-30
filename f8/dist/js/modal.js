@@ -2,14 +2,14 @@ $(document).ready(function(){
     $("#prueba").click(function(){
         SolicitarJson({}, repuestJson, '../json/SC-ARCHENF.JSON');
     });
-    SolicitarJson({}, repuestJson, '../json/SC-ARCHENF.JSON');
+    SolicitarJson({}, repuestJson, '../json/SC-MAESART.JSON');
 });
 
 function repuestJson(datos){
     f8Popup({
         title: "Detalle ciudades", 
-        columns: ["COD","DESCRIP"],
-        array: datos.ESPEC
+        columns: ["NUMERO","DESCRIP"],
+        array: datos.Articulos
     },responsePopup);
 }
 
