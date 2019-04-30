@@ -25,12 +25,14 @@
         },
 
         _initDataTable: function () {
-            $('#' + $.ventanaDatos.tabla_id).DataTable({                
+            $('#' + $.ventanaDatos.tabla_id).DataTable({
                 responsive: true,
                 ajax: {
                     url: 'SC-ARCHTER-00000000000000120190426110003.JSON',
                     dataSrc: 'TERCEROS'
                 },
+                scrollY: '50vh',
+                scrollCollapse: true,
                 columns: [
                     { "data": "COD" },
                     { "data": "NOMBRE" },
@@ -41,7 +43,7 @@
         },
 
         _addColumnas_head: function () {
-            var columnas = ['codigo', 'nombre', 'telefono','ciudad']
+            var columnas = ['codigo', 'nombre', 'telefono', 'ciudad']
             columnas.forEach(function (val) {
                 var row_column = $('<th/>').html(val)
                 $('table#' + $.ventanaDatos.tabla_id + ' thead tr')
@@ -106,6 +108,7 @@
                 .css({
                     width: '100%',
                     padding: '15px',
+                    'overflow-x': 'auto',
                     'box-sizing': 'border-box'
                 })
                 .html('Contenido')
