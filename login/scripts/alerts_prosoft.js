@@ -9,16 +9,19 @@
         foot_class: 'alert_footer',
         btn_id: 'alert_btn',
         btn_text: 'Aceptar',
+        auto_close: null,
+        callback: null,
 
-        alert: function (params, callback) {            
+        alert: function (params, callback) {
+            $.alerts.auto_close = true;
+            $.alerts.callback = callback ? callback : false;
             params.tipo = params.tipo ? params.tipo : 'Alert';
             params.titulo = params.titulo ? params.titulo : 'Alerta';
+            if (params.autoclose != null) $.alerts.auto_close = params.autoclose;
+
             $.alerts._show(params);
 
-            $('#' + $.alerts.btn_id).on('click', function () {
-                $.alerts._eventBtn();
-                if (callback) callback(callback);
-            })
+            $('#' + $.alerts.btn_id).on('click', $.alerts._eventBtn)
         },
 
         _show: function (params) {
@@ -28,11 +31,13 @@
             $('#' + $.alerts.overlay_id).html('').append('<div id="' + $.alerts.container_id + '"></div>');
             $('#' + $.alerts.container_id).css({
                 background: '#FFF',
-                width: '20%',
                 height: 'auto',
                 margin: '0 auto',
                 'box-shadow': 'box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.1), 0 0 15px rgba(0, 0, 0, 0.06);',
-                'border-radius': '3px'
+                'border-radius': '3px',
+                'min-width': '300px',
+                width: '40%',
+
             });
 
             $('#' + $.alerts.container_id).append(''
@@ -131,19 +136,25 @@
                 .fadeIn();
         },
 
-        _eventBtn: function () {
-            $.alerts._hide();
+        _eventBtn: function () {            
+            if ($.alerts.callback) $.alerts.callback($.alerts.callback);
+            if ($.alerts.auto_close) $.alerts._hide();
         },
 
         _hide: function () {
             $('#' + $.alerts.overlay_id).fadeOut('fast', function () {
                 $(this).remove();
+                $('#' + $.alerts.btn_id).off('click', $.alerts._eventBtn)
             });
         },
     }
 
     jAlert = function (params, callback) {
         $.alerts.alert(params, callback);
+    }
+
+    jAlert_close = function () {
+        $.alerts._hide();
     }
 
 })(jQuery);

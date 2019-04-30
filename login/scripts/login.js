@@ -1,13 +1,14 @@
 $(document).ready(principal);
 
 function principal() {
+  var fuente = '<input type="text" />'
 	jAlert({
       titulo: 'Error COBOL',
-      mensaje: '<b>ID:</b> 99 </br>'
-	  + '<b>Descri:</b> Error de estrucutra </br>'
-	  + '<b>Programa:</b> EST000.DLL </br>'
+      mensaje: fuente,
+      autoclose: false
     },function(){
-		console.log('El usuario acepto');
+    console.log('El usuario acepto');
+    // jAlert_close();
 	});
 	
   $('#toogleClave').click(toogleClave);
@@ -15,7 +16,8 @@ function principal() {
   $('#validarForm').click(function () {
     jAlert({
       titulo: 'Error ingresando',
-      mensaje: 'Esto es una prueba de las notificaciones'
+      mensaje: 'Esto es una prueba de las notificaciones',
+      autoclose: false
     });
   })
 
