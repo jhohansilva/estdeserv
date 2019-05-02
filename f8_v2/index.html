@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>F8 - Optimizado</title>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.1.0/material.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.material.min.css">     -->
     <link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
     <style>
         html,
@@ -24,11 +22,22 @@
 <script src="https://code.jquery.com/jquery-3.4.0.min.js"
     integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
 <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-<!-- <script src="https://cdn.datatables.net/1.10.19/js/dataTables.material.min.js"></script> -->
 <script src="_ventanaDatos.js"></script>
 <script>
     $(document).ready(function () {
-        _ventanaDatos();
+        $.ajax({
+            url: 'SC-ARCHTER-00000000000000120190426110003.JSON',
+            method: 'GET'
+        }).done(function (data) {
+            _ventanaDatos({
+                titulo: 'Primera prueba',
+                columnas: ['COD', 'NOMBRE'],
+                data: data.TERCEROS,
+                callback: function(data){
+                    console.log(data)
+                }
+            });
+        })
     });
 </script>
 
